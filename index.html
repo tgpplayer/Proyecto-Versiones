@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Proyecto Web con JavaScript</title>
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 
+        Vinculación del archivo JS 
+        ¡Cuidado! Defer o evento que espera a que el DOM esté cargado antes de ejecutar el script, para evitar errores de referencia a elementos que aún no existen en el DOM.
+    -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- CABECERA (HEADER): Logo y Menú de navegación -->
+    <header class="header">
+        <div class="logo">
+            <h1>JS<span>Intro</span></h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Conceptos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL (MAIN) -->
+    <main class="main-content">
+        <section class="card">
+            <h2>¡Bienvenido a JavaScript!</h2>
+            <p>Esta es tu primera página interactiva. Sigue las instrucciones para empezar a programar.</p>
+            
+            <!-- Contenedor donde JS insertará el texto del usuario -->
+            <div id="mensaje-usuario" class="caja-mensaje">
+                <!-- El texto ingresado con el prompt aparecerá aquí -->
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+        <p>&copy; Proyecto de Introducción a JS y Git</p>
+    </footer>
+
+</body>
+</html>
